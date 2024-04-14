@@ -1,0 +1,158 @@
+/* Seletor universal para resetar margens e paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para o corpo da página */
+body {
+  overflow-x: hidden;
+}
+
+/* Estilos para a logomarca */
+.logomarca {
+  display: block;
+  margin: 10px auto; /* Centraliza a logomarca horizontalmente e adiciona espaço acima */
+  max-width: 200px; /* Define a largura máxima da logomarca */
+  height: auto; /* Permite que a altura seja ajustada automaticamente mantendo a proporção */
+}
+
+/* Estilos para o fundo da página */
+body {
+  background-color: #fcfff3; /* Cor de fundo #FCFFF3 */
+}
+
+
+/* Estilo para a barra de navegação */
+.menu {
+  width: 100%;
+}
+
+/* Estilos para elementos com fundo preto */
+.background-verde {
+  background-color: #05a95c;
+  color: #ffffff;
+}
+
+/* Estilos para a fonte 'Truculenta' com peso 100 */
+.truculenta-100 {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 36px;
+}
+
+/* Estilos para o título */
+.titulo {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Estilos para a linha divisória */
+.linha {
+  width: 10%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.botaoAgendar {
+  text-align: center;
+  margin: 0 auto;
+}
+/* Estilos para margem interna */
+.margem-interna {
+  padding: 20px;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Estilos para campos de entrada de texto */
+.caixa-texto {
+  display: block;
+  padding: 5px;
+  border: 0;
+  border-bottom: 2px solid #c0c0c0;
+  outline: 0;
+  background-color: #D9F2DF;
+  margin-bottom: 10px;
+}
+
+/* Estilos para rótulos de entrada de texto */
+.label-input {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* Estilos para centralizar elementos */
+.centro {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+/* Estilos para botões */
+.btn {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 5px;
+  font-size: 22px;
+  border: 2px solid #4b4b4b;
+  border-radius: 3px;
+}
+
+/* Estilos para hover em botões */
+.btn:hover {
+  background-color: #05a9f2;
+}
+
+/* Estilos para tabelas e células */
+.tabela,
+th,
+td {
+  font-size: 22px;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos para o cabeçalho da tabela */
+th {
+  background-color: #D9F2DF;
+}
+
+/* Estilos para ícones */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* Estilos para botões com ícones */
+.btn-icone {
+  margin-right: 10px;
+  background-color: #ffffff;
+  padding: 5px;
+  border: solid 1px #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+/* Estilos para mídia de tela com largura máxima de 1166px */
+@media (max-width: 1166px) {
+  /* Estilos para campos de texto */
+  .caixa-texto {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Estilos para botões */
+  .btn {
+    margin-top: 20px;
+  }
+}
