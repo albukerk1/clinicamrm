@@ -4,9 +4,10 @@
   padding: 0;
 }
 
-/* Estilo para o corpo da página */
+/* Estilos para o corpo da página */
 body {
   overflow-x: hidden;
+  background-color: #fcfff3; /* Cor de fundo */
 }
 
 /* Estilos para a logomarca */
@@ -16,12 +17,6 @@ body {
   max-width: 200px; /* Define a largura máxima da logomarca */
   height: auto; /* Permite que a altura seja ajustada automaticamente mantendo a proporção */
 }
-
-/* Estilos para o fundo da página */
-body {
-  background-color: #fcfff3; /* Cor de fundo #FCFFF3 */
-}
-
 
 /* Estilo para a barra de navegação */
 .menu {
