@@ -138,6 +138,10 @@ th {
   cursor: pointer;
 }
 
+.btn-icone:hover {
+  background-color: #c0c0c0;
+}
+
 
 /* Estilos para mídia de tela com largura máxima de 1166px */
 @media (max-width: 1166px) {
