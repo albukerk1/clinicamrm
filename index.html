@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Título da página -->
+    <title>Agendamento de Consultas</title>
+
+    <!-- Importação do arquivo CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Logomarca -->
+    <img src="https://i.imgur.com/0p2MCmC.png" alt="Logomarca" class="logomarca" />
+    
+    <!-- Barra de navegação -->
+    <nav class="menu background-preto margem-interna">
+      <!-- Ícone ou nome da aplicação -->
+      <!-- <div class="truculenta-100">AC</div>
+    </nav> -->
+
+    <section class="container">
+      <!-- Título da seção -->
+      <h3 class="truculenta-100 titulo margem-interna">
+        Agendamento de Consultas
+      </h3>
+
+      <!-- Formulário de agendamento de consultas -->
+      <div class="centro margem-interna">
+        <!-- Campo para inserção do nome do paciente -->
+        <label for="paciente" class="truculenta-100 label-input">
+          Paciente:
+        </label>
+        <input type="text" id="paciente" name="paciente" class="caixa-texto" />
+
+        <!-- Campo para seleção da data da consulta -->
+        <label for="data" class="truculenta-100 label-input"> Data: </label>
+        <input type="date" id="data" name="data" class="caixa-texto" />
+
+        <!-- Campo para inserção do horário -->
+        <label for="horario" class="truculenta-100 label-input">
+          Horário:
+        </label>
+        <input type="time" id="horario" name="horario" class="caixa-texto" />
+
+        <!-- Campo para inserção do email do paciente -->
+        <label for="email" class="truculenta-100 label-input"> Email: </label>
+        <input type="email" id="email" name="email" class="caixa-texto" />
+
+        <!-- Campo para inserção do telefone do paciente -->
+        <label for="telefone" class="truculenta-100 label-input">
+          Telefone:
+        </label>
+        <input
+          type="number"
+          id="telefone"
+          name="telefone"
+          class="caixa-texto"
+               /></div>
+
+        <!-- Botão para agendar consulta -->
+        <div class="botaoAgendar"><button
+          type="button"
+          class="truculenta-100 background-verde btn"
+          onclick="salvarConsulta()"
+        >
+          Agendar
+        </button>
+      </div>
+
+      <!-- Tabela de consultas agendadas -->
+      <div class="margem-interna">
+        <table class="centro tabela truculenta-100">
+          <thead>
+            <!-- Cabeçalho da tabela -->
+            <tr>
+              <th>Paciente</th>
+              <th>Data</th>
+              <th>Horário</th>
+              <th>Email</th>
+              <th>Telefone</th>
+              <th></th>
+            </tr>
+          </thead>
+          <!-- Corpo da tabela -->
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Importação do arquivo JavaScript -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
