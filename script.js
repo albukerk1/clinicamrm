@@ -1,5 +1,5 @@
-let listaDeConsultas = [];
-let indiceEdicaoConsulta = -1;
+let listaDeConsultas = []; // Variável global para inicializar o array que armazenará as consultas agendadas
+let indiceEdicaoConsulta = -1; // Variável global para controlar se está editando ou adicionando consulta nova (-1: nada está sendo editado; editando: o valor do índice da consulta no array será armazenado nessa variável, indicando que está sendo editada
 let DataOriginalConsulta; // Variável global para armazenar a data original da consulta
 
 // Função para limpar os campos de entrada de consulta
@@ -13,13 +13,13 @@ function limpaCamposConsulta() {
 
 // Função para salvar uma nova consulta ou editar uma existente
 function salvarConsulta() {
-  let paciente = document.getElementById("paciente").value;
+  let paciente = document.getElementById("paciente").value; // Obtém o nome do paciente
   let dataInput = document.getElementById("data").value; // Obtém a data como string no formato AAAA-MM-DD
   let [ano, mes, dia] = dataInput.split("-"); // Divide a string da data em partes
   let data = new Date(ano, mes - 1, dia); // Cria um novo objeto Date com as partes da data
-  let horario = document.getElementById("horario").value;
-  let email = document.getElementById("email").value;
-  let telefone = document.getElementById("telefone").value;
+  let horario = document.getElementById("horario").value; // Obtém o horário preenchido
+  let email = document.getElementById("email").value; // Obtém o email preenchido
+  let telefone = document.getElementById("telefone").value; // Obtém o telefone preenchido
 
   console.log("Horário selecionado:", horario);
 
